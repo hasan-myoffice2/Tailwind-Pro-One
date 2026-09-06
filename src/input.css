@@ -6,12 +6,15 @@
 @theme {
 
    --text-headerFs: clamp(1.8rem, 1.5rem + 2vw, 3.8rem);
+   --text-headerFss: 70px;
    --text-primaryFs: 40px;
    --text-PeraFs: 17px;
 
    --text-hoverHeaderFs: 16px;
    --text-hoverFs: 14px;
    --color-hoverPeraColor: #464a52;
+
+   --color-btnHoverColor: #0B5ED7;
 
    --color-brandColor: #1f5a44;
 
