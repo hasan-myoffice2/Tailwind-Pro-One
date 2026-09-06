@@ -9,10 +9,16 @@
    --text-primaryFs: 40px;
    --text-PeraFs: 17px;
 
+   --text-hoverHeaderFs: 16px;
+   --text-hoverFs: 14px;
+   --color-hoverPeraColor: #464a52;
+
+   --color-brandColor: #1f5a44;
+
+   --color-navBgColor: #FAF9F6;
    --color-bgColorOne: #F2F0EA;
    --color-bgColorTwo: #FAF9F6;
 
-   --color-peraColor: #464a52;
    --color-peraSeondColor: #14161a;
    --color-cardBgColor: #ffffff;
 
@@ -20,6 +26,16 @@
    --color-footerPeraColor: #cfd2d6;
 
    --font-Fraunces: "Fraunces", serif;
-   --font-inter: "Inter", sans-serif;
+   --font-interFont: "Inter", sans-serif;
 
+   --shadow-navShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
+}
+
+::selection {
+   background-color: var(--color-brandColor);
+   color: #fff;
+}
+
+.active {
+   color: var(--color-brandColor);
 }
