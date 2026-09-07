@@ -60,3 +60,57 @@ const countdown = setInterval(() => {
    }
 
 }, 1000);
+
+
+
+
+const bestSellerSwiper = new Swiper(".bestSellerSwiper", {
+
+   loop: true,
+
+   speed: 800,
+
+   grabCursor: true,
+
+   slidesPerView: 1,
+
+   spaceBetween: 16,
+
+   autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+   },
+
+   pagination: {
+      el: ".bestSellerPagination",
+      clickable: true,
+   },
+
+   navigation: {
+      nextEl: ".bestSellerNext",
+      prevEl: ".bestSellerPrev",
+   },
+
+   breakpoints: {
+      640: {
+         slidesPerView: 2,
+         spaceBetween: 18,
+      },
+
+      768: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+      },
+
+      1024: {
+         slidesPerView: 3,
+         spaceBetween: 20,
+      },
+
+      1280: {
+         slidesPerView: 4,
+         spaceBetween: 20,
+      },
+   },
+});

@@ -8,7 +8,7 @@
 
    --text-headerFs: clamp(1.8rem, 1.5rem + 2vw, 3.8rem);
    --text-headerFss: 70px;
-   --text-primaryFs: 40px;
+   --text-primaryFs: 44px;
    --text-PeraFs: 18px;
 
    --text-hoverHeaderFs: 16px;
@@ -26,7 +26,7 @@
    --color-bgColorOne: #F2F0EA;
    --color-bgColorTwo: #FAF9F6;
 
-   --color-peraSeondColor: #14161a;
+   --color-peraSeondColor: #14161A;
    --color-cardBgColor: #ffffff;
 
    --color-footerBgColor: #14161A;
@@ -46,4 +46,50 @@
 
 .active {
    color: var(--color-brandColor);
+}
+
+
+
+.bestSellerPagination {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+
+.bestSellerPagination .swiper-pagination-bullet {
+   width: 10px !important;
+   height: 10px !important;
+   margin: 0 !important;
+   padding: 0 !important;
+
+   display: block;
+
+   border-radius: 999px;
+
+   background: #dedbd3;
+
+   opacity: 1;
+
+   cursor: pointer;
+
+   transition:
+      width 0.35s ease,
+      background-color 0.35s ease,
+      transform 0.35s ease;
+}
+
+.bestSellerPagination .swiper-pagination-bullet:hover {
+   transform: scale(1.1);
+}
+
+.bestSellerPagination .swiper-pagination-bullet-active {
+   width: 30px !important;
+   height: 10px !important;
+
+   border-radius: 999px;
+
+   background: #17634d;
+
+   opacity: 1;
 }
