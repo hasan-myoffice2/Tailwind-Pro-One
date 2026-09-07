@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 @import "tailwindcss";
 
@@ -8,7 +9,7 @@
    --text-headerFs: clamp(1.8rem, 1.5rem + 2vw, 3.8rem);
    --text-headerFss: 70px;
    --text-primaryFs: 40px;
-   --text-PeraFs: 17px;
+   --text-PeraFs: 18px;
 
    --text-hoverHeaderFs: 16px;
    --text-hoverFs: 14px;
@@ -33,6 +34,7 @@
 
    --font-Fraunces: "Fraunces", serif;
    --font-interFont: "Inter", sans-serif;
+   --font-MonoSpace: "Space Mono", monospace;
 
    --shadow-navShadow: 0 4px 16px rgba(0, 0, 0, 0.16);
 }
