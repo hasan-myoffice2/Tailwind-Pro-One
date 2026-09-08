@@ -93,3 +93,44 @@
 
    opacity: 1;
 }
+
+
+
+/* Swiper Pagination Container Alignment */
+.swiper-pagination {
+   position: relative !important;
+   bottom: 0 !important;
+   margin-top: 24px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+}
+
+/* Inactive Dots (ছোট গোলাকার ডট) */
+.swiper-pagination-bullet {
+   width: 8px !important;
+   height: 8px !important;
+   background-color: #e5e7eb !important;
+   /* Light Gray */
+   opacity: 1 !important;
+   margin: 0 !important;
+   border-radius: 9999px !important;
+   transition: all 0.3s ease-in-out !important;
+   cursor: pointer;
+}
+
+/* Hover Effect on Inactive Dots */
+.swiper-pagination-bullet:hover {
+   background-color: #9ca3af !important;
+}
+
+/* Active Dot (সবুজ ক্যাপসুল / Pill Shape) */
+.swiper-pagination-bullet-active {
+   width: 24px !important;
+   /* পিল শেপের দৈর্ঘ্য */
+   height: 8px !important;
+   background-color: #1b4332 !important;
+   /* ছবির আসল ফরেস্ট গ্রিন কালার */
+   border-radius: 9999px !important;
+}

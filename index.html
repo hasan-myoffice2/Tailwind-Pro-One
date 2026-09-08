@@ -323,9 +323,115 @@
    </section>
    <!-- Hero Section End -->
 
+   <!-- Category Section Start -->
+   <div class=" max-w-7xl mx-auto lg:py-25 py-16 px-4 lg:px-0 font-interFont">
+      <!-- Top Header -->
+      <div class="lg:flex items-end justify-between mb-8">
+         <div>
+            <div class="flex items-center gap-2 mb-3">
+               <span class="w-4 h-[1.5px] bg-[#1b4332]"></span>
+               <span
+                  class="text-[11px] font-MonoSpace font-medium tracking-widest text-brandColor uppercase">BROWSE</span>
+            </div>
+            <h2 class="lg:text-primaryFs text-3xl mb-10 leading-none font-Fraunces text-peraSeondColor tracking-tight">
+               Shop by category
+            </h2>
+         </div>
+
+         <a href="#"
+            class="px-6 py-2.5 text-[15px] font-interFont font-medium text-footerBgColor border border-footerBgColor rounded-full hover:bg-footerBgColor hover:text-white transition-all duration-200">
+            View all categories
+         </a>
+      </div>
+
+      <!-- Auto-Looping Carousel -->
+      <div class="swiper sb-category-swiper w-full">
+         <div class="swiper-wrapper">
+
+            <!-- Card 1 -->
+            <div class="swiper-slide h-95!">
+               <div class="relative w-full h-full rounded-[20px] overflow-hidden group select-none shadow-sm">
+                  <img
+                     src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800&auto=format&fit=crop"
+                     alt="Apparel"
+                     class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none" />
+                  <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex justify-between items-baseline text-white">
+                     <h3 class="text-2xl font-serif-title font-bold">Apparel</h3>
+                     <span class="text-[13px] text-gray-200 opacity-90">128 items</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="swiper-slide h-95!">
+               <div class="relative w-full h-full rounded-[20px] overflow-hidden group select-none shadow-sm">
+                  <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=800&auto=format&fit=crop"
+                     alt="Footwear"
+                     class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none" />
+                  <div class="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex justify-between items-baseline text-white">
+                     <h3 class="text-2xl font-serif-title font-bold">Footwear</h3>
+                     <span class="text-[13px] text-gray-200 opacity-90">64 items</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="swiper-slide h-95!">
+               <div class="relative w-full h-full rounded-[20px] overflow-hidden group select-none shadow-sm">
+                  <img
+                     src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=800&auto=format&fit=crop"
+                     alt="Accessories"
+                     class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none" />
+                  <div class="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex justify-between items-baseline text-white">
+                     <h3 class="text-2xl font-serif-title font-bold">Accessories</h3>
+                     <span class="text-[13px] text-gray-200 opacity-90">96 items</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="swiper-slide h-95!">
+               <div class="relative w-full h-full rounded-[20px] overflow-hidden group select-none shadow-sm">
+                  <img
+                     src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=800&auto=format&fit=crop"
+                     alt="Home & living"
+                     class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none" />
+                  <div class="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex justify-between items-baseline text-white">
+                     <h3 class="text-2xl font-serif-title font-bold">Home & living</h3>
+                     <span class="text-[13px] text-gray-200 opacity-90">153 items</span>
+                  </div>
+               </div>
+            </div>
+
+            <!-- Card 5 (Infinite Loop এর জন্য অতিরিক্ত কার্ড) -->
+            <div class="swiper-slide h-95!">
+               <div class="relative w-full h-full rounded-[20px] overflow-hidden group select-none shadow-sm">
+                  <img
+                     src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=800&auto=format&fit=crop"
+                     alt="Beauty"
+                     class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 pointer-events-none" />
+                  <div class="absolute inset-0 bg-linear-to-t from-black/75 via-black/10 to-transparent"></div>
+                  <div class="absolute bottom-5 left-5 right-5 flex justify-between items-baseline text-white">
+                     <h3 class="text-2xl font-serif-title font-bold">Beauty</h3>
+                     <span class="text-[13px] text-gray-200 opacity-90">82 items</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Pagination -->
+         <div class="swiper-pagination"></div>
+      </div>
+
+   </div>
+   <!-- Category Section End -->
+
    <!-- Best Seller Section Start -->
-   <section class="bg-[#f5f3ed] py-16 md:py-20 lg:py-24">
-      <div class="mx-auto max-w-[1280px] px-5 sm:px-6 lg:px-8">
+   <section class="bg-bgColorOne py-16 md:py-20 lg:py-24">
+      <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
          <!-- ================= HEADER ================= -->
          <div class="mb-10 flex items-end justify-between gap-5">
             <div>
@@ -1343,6 +1449,37 @@
    <!-- Swiper JS cdn Link -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <!-- Swiper One Script -->
+
+   <script>
+      const categorySwiper = new Swiper('.sb-category-swiper', {
+         slidesPerView: 1,
+         spaceBetween: 20,
+         loop: true,
+
+         // Auto Loop Setting
+         autoplay: {
+            delay: 3000, // প্রতি ৩ সেকেন্ড পর পর স্বয়ংক্রিয়ভাবে স্লাইড হবে
+            disableOnInteraction: false, // মাউস দিয়ে Drag করার পরও Autoplay থামবে না
+            pauseOnMouseEnter: true, // মাউস হভার করলে অটো স্লাইড সাময়িকভাবে থেমে থাকবে
+         },
+
+         grabCursor: true,
+         simulateTouch: true,
+         speed: 2000, // স্লাইড অ্যানিমেশন স্পিড
+
+         pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+         },
+
+         breakpoints: {
+            640: { slidesPerView: 2, spaceBetween: 20 },
+            768: { slidesPerView: 3, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 20 },
+         },
+      });
+   </script>
+
    <script>
       const testimonialSwiper = new Swiper(".testimonialSwiper", {
          slidesPerView: 1,
