@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro No One</title>
+   <!-- Swiper JS CDN Link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Bootstrap Icons Link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+   <!-- Navbar Section Start -->
+   <nav class="py-6 shadow-navShadow bg-navBgColor font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl m-auto flex items-center justify-between">
+         <div class="lg:hidden block"><i class="bi bi-list text-2xl"></i></div>
+         <div class="brand-name">
+            <img src="/image/BrandLogo.png" alt="Brand-logo">
+         </div>
+         <ul class="lg:flex items-center gap-10 font-medium font-interFont text-peraSeondColor hidden">
+            <li class="relative group">
+               <a href="#" class="flex active items-center gap-1">Home<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/index.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Multipurpose
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Fashion
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Electronice
+                        Home</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Shop<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <div class="absolute -left-100 top-full mt-5 w-250  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-6 py-10 border border-[#ddd]">
+                  <div class="grid grid-cols-4">
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP LAYOUTS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — left sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — Right sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">List View</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Product Details</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP TOOLS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           CATEGORIES</h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <img class="w-full h-full rounded-2xl" src="./image/nav-img.jpg" alt="navImage">
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Pages<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">About
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Contact
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">404
+                        Error
+                        Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Checkout
+                        Flow</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">User<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Sign
+                        in</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Create
+                        Account</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Account
+                        Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Order
+                        History</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Tracker
+                        order</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Wishlist</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Blog<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        grid</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        list</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        details</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Support<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Contact
+                        us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Track
+                        order</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Legal<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Privacy
+                        policy</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Trams
+                        & conditions</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="flex gap-3 text-peraSeondColor">
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-search"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-heart"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  3</div>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-person"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-bag"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  2</div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-15 bg-bgColorOne">
+      <div class="max-w-7xl mx-auto px-4 lg:px-0">
+         <ul>
+            <a class="text-hoverPeraColor font-interFont hover:text-brandColor transition-all"
+               href="/index.html">Home</a>
+            <i class="bi bi-chevron-right text-hoverFs text-hoverPeraColor"></i>
+            <a class="text-hoverPeraColor font-interFont" href="#">About</a>
+         </ul>
+         <h2 class="lg:text-primaryFs text-2xl text-peraSeondColor font-Fraunces mb-2 mt-2 font-semibold">Considered
+            goods, honestly
+            made</h2>
+         <p class="text-PeraFs font-interFont text-hoverPeraColor">Novena began in 2016 as a two-person studio.
+            Today we
+            ship <br class="hiding lg:block"> to 42 countries.</p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- Our Story Section Start -->
+   <section class="bg-bgColorTwo py-16 sm:py-20 lg:py-24">
+      <div class="mx-auto max-w-7xl px-4 lg:px-0">
+         <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-14">
+            <div class="overflow-hidden rounded-2xl">
+               <img src="/image/about-1.jpg" alt="Our Story"
+                  class="h-105 w-full object-cover transition duration-700 hover:scale-105 sm:h-120 lg:h-115">
+            </div>
+            <div>
+               <div class="mb-5 flex items-center gap-2">
+                  <span class="h-px w-6 bg-brandColor"></span>
+                  <span class="font-MonoSpace text-[11px] font-normal uppercase tracking-[0.2em] text-brandColor">
+                     Our Story
+                  </span>
+               </div>
+               <h2
+                  class="mb-6 max-w-xl font-Fraunces text-2xl font-medium leading-[1.1] text-footerBgColor sm:text-5xl lg:text-primaryFs">
+                  Fewer, better things
+               </h2>
+               <div class="max-w-2xl space-y-5 text-[15px] leading-7 text-hoverPeraColor font-interFont sm:text-base">
+                  <p>
+                     We started Novena with a simple frustration: most of what's sold
+                     online is designed to be replaced, not kept. So we set out to build
+                     a catalogue of considered essentials — sourced from workshops we
+                     visit in person, made from materials that age well, and priced
+                     without the usual markup games.
+                  </p>
+                  <p>
+                     A decade later that principle hasn't changed. Every product on this
+                     site has been used by our own team for at least three months before
+                     it goes live.
+                  </p>
+               </div>
+               <div class="mt-8 grid grid-cols-2 gap-x-8 gap-y-7 sm:mt-9 text-footerBgColor sm:gap-x-12">
+                  <div>
+                     <h3 class="font-Fraunces text-2xl font-semibold leading-none sm:text-4xl">
+                        2,016
+                     </h3>
+                     <p class="mt-2 text-sm text-[#46566A] font-interFont">
+                        Founded in Lisbon
+                     </p>
+                  </div>
+                  <div>
+                     <h3 class="font-Fraunces text-2xl font-semibold leading-none sm:text-4xl">
+                        42
+                     </h3>
+                     <p class="mt-2 text-sm text-[#46566A] font-interFont">
+                        Countries served
+                     </p>
+                  </div>
+                  <div>
+                     <h3 class="font-Fraunces text-2xl font-semibold leading-none sm:text-4xl">
+                        120+
+                     </h3>
+                     <p class="mt-2 text-sm text-[#46566A] font-interFont">
+                        Workshop partners
+                     </p>
+                  </div>
+                  <div>
+                     <h3 class="font-Fraunces text-2xl font-semibold leading-none sm:text-4xl">
+                        12k+
+                     </h3>
+                     <p class="mt-2 text-sm text-[#46566A] font-interFont">
+                        5-star reviews
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <!-- Our Story Section End -->
+
+   <!-- Principles Section Start -->
+   <section class="bg-[#FAF9F6] py-14 sm:py-16 lg:py-20">
+      <div class="mx-auto max-w-7xl px-5">
+
+         <!-- Section Heading -->
+         <div class="mb-10 text-center sm:mb-12">
+            <div class="mb-4 flex items-center justify-center gap-2">
+               <span class="h-px w-6 bg-brandColor"></span>
+               <span class="font-MonoSpace text-[11px] font-medium uppercase tracking-[0.2em] text-brandColor">
+                  What we believe
+               </span>
+            </div>
+            <h2 class=" font-Fraunces lg:text-primaryFs text-2xl font-semibold leading-tight text-footerBgColor">
+               Our principles
+            </h2>
+         </div>
+
+
+         <!-- Principles Cards -->
+         <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+            <!-- Card 01 -->
+            <div
+               class="flex items-center gap-6 rounded-[22px] bg-white px-6 py-5 shadow-[0_12px_30px_rgba(20,22,26,0.08)]">
+               <!-- Icon -->
+               <div class="flex h-20 w-16 shrink-0 items-center justify-center rounded-[10px] border border-[#D9D9D9]">
+                  <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M24 7L15 20H19L12 30H20L16 39H32L28 30H36L29 20H33L24 7Z" stroke="#1F5A44"
+                        stroke-width="1.8" stroke-linejoin="round" />
+                     <path d="M24 29V42" stroke="#1F5A44" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+               </div>
+               <!-- Content -->
+               <div>
+                  <h3 class="mb-1.5 font-Fraunces text-[20px] font-semibold text-footerBgColor">
+                     Made to last
+                  </h3>
+                  <p class="max-w-70 text-[13px] font-interFont leading-[1.55] text-[#536070]">
+                     We design for repair, not replacement, and back everything with a two-year.
+                  </p>
+               </div>
+
+            </div>
+
+            <!-- Card 02 -->
+            <div
+               class="flex items-center gap-6 rounded-[22px] bg-white px-6 py-5 shadow-[0_12px_30px_rgba(20,22,26,0.08)]">
+               <!-- Icon -->
+               <div class="flex h-20 w-16 shrink-0 items-center justify-center rounded-[10px] border border-[#D9D9D9]">
+                  <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <!-- Heads -->
+                     <circle cx="18" cy="17" r="6" stroke="#1F5A44" stroke-width="1.8" />
+                     <circle cx="31" cy="18" r="5" stroke="#1F5A44" stroke-width="1.8" />
+                     <!-- Bodies -->
+                     <path d="M8 35C8 29.4772 12.4772 25 18 25C23.5228 25 28 29.4772 28 35" stroke="#1F5A44"
+                        stroke-width="1.8" stroke-linecap="round" />
+                     <path d="M27 27C28.2 25.8 29.8 25 31.8 25C36.3 25 40 28.7 40 33.2V35" stroke="#1F5A44"
+                        stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+               </div>
+
+               <!-- Content -->
+               <div>
+                  <h3 class="mb-1.5 font-Fraunces text-[20px] font-semibold text-footerBgColor">
+                     Fair partners
+                  </h3>
+
+                  <p class="max-w-70 text-[13px] font-interFont leading-[1.55] text-[#536070]">
+                     We work directly with independent workshops and pay above local market .
+                  </p>
+               </div>
+
+            </div>
+
+            <!-- Card 03 -->
+            <div
+               class="flex items-center gap-6 rounded-[22px] bg-white px-6 py-5 shadow-[0_12px_30px_rgba(20,22,26,0.08)]">
+               <!-- Icon -->
+               <div class="flex h-20 w-16 shrink-0 items-center justify-center rounded-[10px] border border-[#D9D9D9]">
+                  <svg class="h-9 w-9" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M10 15V11C10 9.89543 10.8954 9 12 9H27L39 21L22 38L10 26V15Z" stroke="#1F5A44"
+                        stroke-width="1.8" stroke-linejoin="round" />
+                     <circle cx="17" cy="16" r="2.5" stroke="#1F5A44" stroke-width="1.8" />
+                  </svg>
+               </div>
+
+               <!-- Content -->
+               <div>
+                  <h3 class="mb-1.5 font-Fraunces text-[20px] font-semibold text-footerBgColor">
+                     Honest pricing
+                  </h3>
+                  <p class="max-w-70 text-[13px] font-interFont leading-[1.55] text-[#536070]">
+                     No fake countdowns, no inflated "was" prices. What you see is the real cost.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Principles Section End -->
+
+   <!-- Team Section Start -->
+   <section class="bg-bgColorTwo py-10 lg:py-20">
+      <div class="mx-auto max-w-7xl px-4 lg:px-0">
+         <div class="mb-12 text-center">
+            <div class="mb-4 flex items-center justify-center gap-2">
+               <span class="h-px w-6 bg-brandColor"></span>
+               <span class="font-MonoSpace text-xs font-normal uppercase tracking-[0.2em] text-brandColor">
+                  Meet the Team
+               </span>
+            </div>
+
+            <h2 class="font-Fraunces font-semibold lg:text-primaryFs leading-tight text-peraSeondColor text-3xl">
+               The people behind NovaShop
+            </h2>
+         </div>
+
+         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <div
+               class="group rounded-2xl border border-[#DCDDD9] bg-transparent p-4 transition duration-300 hover:-translate-y-1 hover:border-brandColor">
+               <div class="overflow-hidden rounded-xl">
+                  <img src="/image/team-1.jpg" alt="Amara Lindqvist"
+                     class="h-66 w-full object-cover object-center transition duration-500 group-hover:scale-105">
+               </div>
+               <div class="pt-4 text-center">
+                  <h3 class="font-Fraunces text-2xl font-semibold text-peraSeondColor">
+                     Amara Lindqvist
+                  </h3>
+                  <p class="mt-1 text-sm text-[#5F6368] font-interFont">
+                     Co-founder & CEO
+                  </p>
+
+                  <div class="mt-5 flex items-center justify-center gap-2">
+                     <a href="#" aria-label="LinkedIn"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+                     <a href="#" aria-label="X"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-twitter-x"></i>
+                     </a>
+                     <a href="#" aria-label="Email"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-envelope"></i>
+                     </a>
+
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="group rounded-2xl border border-[#DCDDD9] bg-transparent p-4 transition duration-300 hover:-translate-y-1 hover:border-brandColor">
+
+               <div class="overflow-hidden rounded-xl">
+                  <img src="/image/team-2.jpg" alt="Kenji Osei"
+                     class="h-66 w-full object-cover object-center transition duration-500 group-hover:scale-105">
+               </div>
+
+               <div class="pt-4 text-center">
+                  <h3 class="font-Fraunces text-2xl font-semibold text-peraSeondColor">
+                     Kenji Osei
+                  </h3>
+                  <p class="mt-1 text-sm text-[#5F6368] font-interFont">
+                     Co-founder & Design
+                  </p>
+
+                  <div class="mt-5 flex items-center justify-center gap-2">
+                     <a href="#" aria-label="LinkedIn"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+                     <a href="#" aria-label="Dribbble"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-dribbble"></i>
+                     </a>
+                     <a href="#" aria-label="Email"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-envelope"></i>
+                     </a>
+
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="group rounded-2xl border border-[#DCDDD9] bg-transparent p-4 transition duration-300 hover:-translate-y-1 hover:border-brandColor">
+               <div class="overflow-hidden rounded-xl">
+                  <img src="/image/team-3.jpg" alt="Priya Nair"
+                     class="h-66 w-full object-cover object-center transition duration-500 group-hover:scale-105">
+               </div>
+
+               <div class="pt-4 text-center">
+                  <h3 class="font-Fraunces text-2xl font-semibold text-peraSeondColor">
+                     Priya Nair
+                  </h3>
+                  <p class="mt-1 text-sm text-[#5F6368] font-interFont">
+                     Head of Sourcing
+                  </p>
+
+                  <div class="mt-5 flex items-center justify-center gap-2">
+
+                     <a href="#" aria-label="LinkedIn"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+
+                     <a href="#" aria-label="X"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-twitter-x"></i>
+                     </a>
+
+                     <a href="#" aria-label="Email"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-envelope"></i>
+                     </a>
+
+                  </div>
+               </div>
+            </div>
+
+            <div
+               class="group rounded-2xl border border-[#DCDDD9] bg-transparent p-4 transition duration-300 hover:-translate-y-1 hover:border-brandColor">
+
+               <div class="overflow-hidden rounded-xl">
+                  <img src="/image/team-4.jpg" alt="Elena Marchetti"
+                     class="h-66 w-full object-cover object-center transition duration-500 group-hover:scale-105">
+               </div>
+
+               <div class="pt-4 text-center">
+                  <h3 class="font-Fraunces text-2xl font-semibold text-peraSeondColor">
+                     Elena Marchetti
+                  </h3>
+                  <p class="mt-1 text-sm text-[#5F6368] font-interFont">
+                     Customer Experience
+                  </p>
+
+                  <div class="mt-5 flex items-center justify-center gap-2">
+                     <a href="#" aria-label="LinkedIn"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-linkedin"></i>
+                     </a>
+                     <a href="#" aria-label="Instagram"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-instagram"></i>
+                     </a>
+                     <a href="#" aria-label="Email"
+                        class="flex h-10 w-10 hover:-translate-y-1 items-center justify-center rounded-full border border-[#DCDDD9] text-[#36536B] transition duration-300 hover:bg-brandColor hover:text-white">
+                        <i class="bi bi-envelope"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Team Section End -->
+
+   <!-- NewsLetter Section Start -->
+   <section class="py-20 px-4 lg:px-0 bg-white">
+      <div class="container max-w-7xl mx-auto">
+         <div class="newLetter lg:flex items-center justify-between lg:p-12 py-8 px-4 rounded-2xl bg-[#E7EFE9]">
+            <div class="newTitle">
+               <h3 class="text-[12px] mb-4 uppercase [word-spacing:4px] text-brandColor tracking-[2px] font-interFont">
+                  Join the list</h3>
+               <h2 class="text-[26px] mb-4 text-footerBgColor font-Fraunces font-medium">15% off your first order
+               </h2>
+            </div>
+            <div class="input-aria lg:flex items-center gap-4">
+               <input
+                  class="bg-white w-full border-2 border-transparent focus:border-brandColor focus:outline-none transition p-3 px-6 rounded-full"
+                  type="text" placeholder="you@example.com">
+               <button
+                  class="py-3 px-6 mt-5 lg:mt-0 bg-brandColor hover:bg-btnHoverColor transition-all duration-300 text-white rounded-full font-semibold">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- NewsLetter Section End -->
+
+   <!-- Footer Section Start -->
+   <section class="bg-footerBgColor text-white py-16 font-interFont px-4 lg:px-0">
+      <div class="container max-w-7xl mx-auto ">
+         <div class="grid lg:grid-cols-6 md:grid-cols-2 gap-10">
+            <div class="col-span-2">
+               <img src="./image/logo-white.png" alt="FooterImage">
+               <p class="text-[#ffffff80] mb-5 mt-8 leading-7 text-[15px]">Considered essentials for everyday living —
+                  <br>
+                  designed with
+                  restraint,
+                  made to
+                  last, priced <br> fairly.
+                  Shipping worldwide from our studio.
+               </p>
+               <ul class="flex items-center gap-4 mt-6">
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-instagram"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-facebook"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-pinterest"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-twitter-x"></i>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">SHOP</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">New arrivals</li>
+                  <li class="hover:text-white transition-all duration-100">Best sellers</li>
+                  <li class="hover:text-white transition-all duration-100">Sale</li>
+                  <li class="hover:text-white transition-all duration-100">Compare</li>
+                  <li class="hover:text-white transition-all duration-100">Wishlist</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">ACCOUNT</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Sign in</li>
+                  <li class="hover:text-white transition-all duration-100">Create account</li>
+                  <li class="hover:text-white transition-all duration-100">Track order</li>
+                  <li class="hover:text-white transition-all duration-100">Dashboard</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">COMPANY</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">About us</li>
+                  <li class="hover:text-white transition-all duration-100">Journal</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">FAQ</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">LEGAL</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Privacy policy</li>
+                  <li class="hover:text-white transition-all duration-100">Terms & conditions</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">Shipping & returns</li>
+               </ul>
+            </div>
+         </div>
+         <ul class="border-t mt-10 border-t-[#ffffff1a] lg:flex items-center justify-between">
+            <li class="mt-6 text-[15px] text-[#8b8f96]">© 2026 Plan Code Deploy. All rights reserved.</li>
+            <div class="flex items-center gap-3 text-[12px] text-[#8b8f96]">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </ul>
+      </div>
+   </section>
+   <!-- Footer Section End -->
+
+   <!-- Swiper JS cdn Link -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper One Script -->
+
+   <script src="./script.js"></script>
+
+</body>
+
+</html>
