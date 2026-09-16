@@ -114,3 +114,48 @@ const bestSellerSwiper = new Swiper(".bestSellerSwiper", {
       },
    },
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+   const accordionItems = document.querySelectorAll(".accordion-item");
+
+   accordionItems.forEach(item => {
+      const btn = item.querySelector(".accordion-btn");
+      const content = item.querySelector(".accordion-content");
+      const icon = item.querySelector(".accordion-icon");
+
+      btn.addEventListener("click", () => {
+         // Find the parent group (section container) to handle one-open-at-a-time per group
+         const parentGroup = item.parentElement;
+         const groupItems = parentGroup.querySelectorAll(".accordion-item");
+
+         // Close all other accordions within the same section
+         groupItems.forEach(otherItem => {
+            if (otherItem !== item) {
+               otherItem.querySelector(".accordion-content").classList.add("hidden");
+               otherItem.querySelector(".accordion-btn").classList.remove("bg-blue-50/60", "text-blue-900", "font-medium");
+               otherItem.querySelector(".accordion-btn").classList.add("hover:bg-stone-50/50", "text-stone-900");
+               otherItem.querySelector(".accordion-icon").classList.remove("rotate-180", "text-blue-600");
+               otherItem.querySelector(".accordion-icon").classList.add("text-stone-400");
+            }
+         });
+
+         // Toggle current accordion
+         const isOpen = !content.classList.contains("hidden");
+
+         if (isOpen) {
+            content.classList.add("hidden");
+            btn.classList.remove("bg-blue-50/60", "text-blue-900", "font-medium");
+            btn.classList.add("hover:bg-stone-50/50", "text-stone-900");
+            icon.classList.remove("rotate-180", "text-blue-600");
+            icon.classList.add("text-stone-400");
+         } else {
+            content.classList.remove("hidden");
+            btn.classList.remove("hover:bg-stone-50/50", "text-stone-900");
+            btn.classList.add("bg-blue-50/60", "text-blue-900", "font-medium");
+            icon.classList.remove("text-stone-400");
+            icon.classList.add("rotate-180", "text-blue-600");
+         }
+      });
+   });
+});
