@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro No One</title>
+   <!-- Swiper JS CDN Link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Bootstrap Icons Link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="/src/output.css">
+   <!-- FontAwesome Icons CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+</head>
+
+<body>
+   <!-- Navbar Section Start -->
+   <nav class="py-6 shadow-cardShadow border-b border-b-gray-300 bg-navBgColor font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl m-auto flex items-center justify-between">
+         <div class="lg:hidden block"><i class="bi bi-list text-2xl"></i></div>
+         <div class="brand-name">
+            <img src="/image/BrandLogo.png" alt="Brand-logo">
+         </div>
+         <ul class="lg:flex items-center gap-10 font-medium font-interFont text-peraSeondColor hidden">
+            <li class="relative group">
+               <a href="#" class="flex active items-center gap-1">Home<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/index.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Multipurpose
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="/Home/fashion.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Fashion
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Electronice
+                        Home</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Shop<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <div class="absolute -left-100 top-full mt-5 w-250  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-6 py-10 border border-[#ddd]">
+                  <div class="grid grid-cols-4">
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP LAYOUTS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — left sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — Right sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">List View</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Product Details</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP TOOLS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           CATEGORIES</h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <img class="w-full h-full rounded-2xl" src="./image/nav-img.jpg" alt="navImage">
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Pages<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/PagesFolder/about.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">About
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/contact.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Contact
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/FAQ.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/404.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">404
+                        Error
+                        Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Checkout
+                        Flow</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">User<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Sign
+                        in</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Create
+                        Account</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Account
+                        Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Order
+                        History</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Tracker
+                        order</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Wishlist</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Blog<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        grid</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        list</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        details</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Support<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Contact
+                        us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Track
+                        order</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Legal<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/LegalFolder/privacy-policy.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Privacy
+                        policy</a>
+                  </li>
+                  <li>
+                     <a href="/LegalFolder/trams-conditions.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Trams
+                        & conditions</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="flex gap-3 text-peraSeondColor">
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-search"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-heart"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  3</div>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-person"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-bag"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  2</div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Register Page Section Start -->
+   <main class="flex items-center justify-center px-5 py-20 font-interFont">
+      <!-- Login Card -->
+      <div
+         class="relative w-full max-w-140 rounded-[30px] border border-white/60 bg-[#e8eef1]/90 px-7 py-10 shadow-[12px_18px_35px_rgba(89,108,122,0.18),-10px_-10px_25px_rgba(255,255,255,0.9)] backdrop-blur-xl sm:px-9">
+         <!-- Lock Icon -->
+         <div class="mb-5 flex justify-center">
+            <div
+               class="flex h-18 w-18 items-center justify-center rounded-full bg-[#e8eef1] text-[#1683e8] shadow-[7px_9px_18px_rgba(100,120,135,0.20),-7px_-7px_16px_rgba(255,255,255,0.95)]">
+               <i class="fa-solid fa-lock text-[27px]"></i>
+            </div>
+         </div>
+         <!-- Heading -->
+         <div class="text-center">
+            <h1 class="text-[27px] font-bold font-Fraunces tracking-[-0.5px] text-[#26323a]">
+               Sign in to your account
+            </h1>
+            <p class="mt-2 text-[13px] font-medium text-[#89949a]">
+               Login to continue your journey
+            </p>
+         </div>
+         <!-- Login Form -->
+         <form class="mt-8 space-y-5">
+            <!-- Email -->
+            <div>
+               <label for="email" class="sr-only">
+                  Email Address
+               </label>
+               <div
+                  class="flex h-[48px] items-center rounded-[14px] border border-white/70 bg-[#e8eef1] px-4 shadow-[inset_4px_5px_10px_rgba(130,145,155,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.9)] transition-all duration-300 focus-within:border-[#1683e8]/30 focus-within:shadow-[inset_3px_4px_8px_rgba(130,145,155,0.15),0_0_0_3px_rgba(22,131,232,0.06)]">
+                  <input id="email" type="email" placeholder="Email Address"
+                     class="w-full bg-transparent text-[14px] font-medium text-[#36434b] outline-none placeholder:text-[#8d989e]">
+               </div>
+            </div>
+            <!-- Password -->
+            <div>
+               <label for="password" class="sr-only">
+                  Password
+               </label>
+               <div
+                  class="flex h-[48px] items-center rounded-[14px] border border-white/70 bg-[#e8eef1] px-4 shadow-[inset_4px_5px_10px_rgba(130,145,155,0.18),inset_-4px_-4px_10px_rgba(255,255,255,0.9)] transition-all duration-300 focus-within:border-[#1683e8]/30 focus-within:shadow-[inset_3px_4px_8px_rgba(130,145,155,0.15),0_0_0_3px_rgba(22,131,232,0.06)]">
+                  <input id="password" type="password" placeholder="Password"
+                     class="min-w-0 flex-1 bg-transparent text-[14px] font-medium text-[#36434b] outline-none placeholder:text-[#8d989e]">
+                  <button type="button"
+                     class="ml-3 flex h-7 w-7 shrink-0 items-center justify-center text-[#7d898f] transition hover:text-[#1683e8]">
+                     <i class="fa-solid fa-eye text-[15px]"></i>
+                  </button>
+               </div>
+            </div>
+            <!-- Remember + Forgot -->
+            <div class="flex items-center justify-between gap-3">
+               <!-- Remember -->
+               <label class="flex cursor-pointer items-center gap-2 text-[12px] font-medium text-[#818d93]">
+                  <input type="checkbox"
+                     class="h-[13px] w-[13px] cursor-pointer appearance-none rounded-[3px] border border-[#9ba6ab] bg-transparent checked:border-[#1683e8] checked:bg-[#1683e8]">
+                  <span class="text-hoverFs">
+                     Remember me
+                  </span>
+               </label>
+               <!-- Forgot -->
+               <a href="#" class="text-hoverFs font-semibold text-[#1683e8] transition hover:text-[#086cc5]">
+                  Forgot Password?
+               </a>
+            </div>
+            <!-- Login Button -->
+            <button type="submit"
+               class="group relative flex h-[50px] w-full items-center justify-center overflow-hidden rounded-[15px] bg-[#e8eef1] text-[13px] font-bold text-[#1683e8] shadow-[7px_9px_18px_rgba(105,123,135,0.20),-7px_-7px_16px_rgba(255,255,255,0.9)] transition-all duration-300 hover:-translate-y-0.5 hover:text-[#0873d2] hover:shadow-[9px_12px_22px_rgba(105,123,135,0.24),-8px_-8px_18px_rgba(255,255,255,0.95)] active:translate-y-0 active:shadow-[inset_4px_5px_10px_rgba(130,145,155,0.16),inset_-4px_-4px_10px_rgba(255,255,255,0.9)]">
+               <span class="relative z-10 text-[15px]">
+                  Sign In
+               </span>
+            </button>
+         </form>
+
+         <!-- Register -->
+         <div class="mt-7 flex items-center justify-center gap-3">
+            <p class="text-[15px] font-medium text-[#8a959b]">
+               Don't have an account?
+            </p>
+            <!-- Plus Button -->
+            <a href="#" aria-label="Create account"
+               class="flex h-15.5 w-15.5 items-center justify-center rounded-full bg-[#e8eef1] text-[#1683e8] shadow-[6px_8px_16px_rgba(105,123,135,0.20),-6px_-6px_14px_rgba(255,255,255,0.95)] transition-all duration-300 hover:-translate-y-1 hover:text-[#086cc5] hover:shadow-[8px_11px_20px_rgba(105,123,135,0.24),-7px_-7px_17px_rgba(255,255,255,0.95)] active:translate-y-0">
+               <i class="fa-solid fa-plus text-[23px]"></i>
+            </a>
+         </div>
+      </div>
+   </main>
+   <!-- Register Page Section End -->
+
+   <!-- Footer Section Start -->
+   <section class="bg-footerBgColor text-white py-16 font-interFont px-4 lg:px-0">
+      <div class="container max-w-7xl mx-auto ">
+         <div class="grid lg:grid-cols-6 md:grid-cols-2 gap-10">
+            <div class="col-span-2">
+               <img src="/image/logo-white.png" alt="FooterImage">
+               <p class="text-[#ffffff80] mb-5 mt-8 leading-7 text-[15px]">Considered essentials for everyday living —
+                  <br>
+                  designed with
+                  restraint,
+                  made to
+                  last, priced <br> fairly.
+                  Shipping worldwide from our studio.
+               </p>
+               <ul class="flex items-center gap-4 mt-6">
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-instagram"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-facebook"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-pinterest"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-twitter-x"></i>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">SHOP</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">New arrivals</li>
+                  <li class="hover:text-white transition-all duration-100">Best sellers</li>
+                  <li class="hover:text-white transition-all duration-100">Sale</li>
+                  <li class="hover:text-white transition-all duration-100">Compare</li>
+                  <li class="hover:text-white transition-all duration-100">Wishlist</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">ACCOUNT</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Sign in</li>
+                  <li class="hover:text-white transition-all duration-100">Create account</li>
+                  <li class="hover:text-white transition-all duration-100">Track order</li>
+                  <li class="hover:text-white transition-all duration-100">Dashboard</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">COMPANY</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">About us</li>
+                  <li class="hover:text-white transition-all duration-100">Journal</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">FAQ</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">LEGAL</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Privacy policy</li>
+                  <li class="hover:text-white transition-all duration-100">Terms & conditions</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">Shipping & returns</li>
+               </ul>
+            </div>
+         </div>
+         <ul class="border-t mt-10 border-t-[#ffffff1a] lg:flex items-center justify-between">
+            <li class="mt-6 text-[15px] text-[#8b8f96]">© 2026 Plan Code Deploy. All rights reserved.</li>
+            <div class="flex items-center gap-3 text-[12px] text-[#8b8f96]">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </ul>
+      </div>
+   </section>
+   <!-- Footer Section End -->
+
+   <!-- Swiper JS cdn Link -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.cjs"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper One Script -->
+
+   <script src="/script.js"></script>
+
+</body>
+
+</html>
