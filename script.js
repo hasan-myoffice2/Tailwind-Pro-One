@@ -159,3 +159,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
    });
 });
+
+// CustomCursor
+
+const cursor = document.querySelector('.customCursor');
+// mouse position
+let mouseX = 0;
+let mouseY = 0;
+
+// cursor position
+let cursorX = 0;
+let cursorY = 0;
+
+// mouse moveing
+document.addEventListener('mousemove', (e) => {
+   mouseX = e.clientX;
+   mouseY = e.clientY;
+})
+
+// cursorAnimate Function
+function cursorAnimate() {
+   cursorX += (mouseX - cursorX) * 0.16;
+   cursorY += (mouseY - cursorY) * 0.16;
+
+   cursor.style.left = cursorX + 'px';
+   cursor.style.top = cursorY + 'px';
+
+   requestAnimationFrame(cursorAnimate)
+}
+cursorAnimate()
