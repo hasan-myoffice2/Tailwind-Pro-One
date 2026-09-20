@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro No One</title>
+   <!-- Swiper JS CDN Link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Bootstrap Icons Link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+   <div class="fixed customCursor pointer-events-none left-0 top-0 z-9999 flex h-10 w-10
+          -translate-x-1/2 -translate-y-1/2 items-center justify-center
+          rounded-full border-2 border-[#0C5ECF]">
+
+      <div class="h-3 w-3 rounded-full bg-[#0C5ECF]"></div>
+
+   </div>
+   <!-- Navbar Section Start -->
+   <nav class="py-6 shadow-navShadow bg-navBgColor font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl m-auto flex items-center justify-between">
+         <div class="lg:hidden block"><i class="bi bi-list text-2xl"></i></div>
+         <div class="brand-name">
+            <img src="/image/BrandLogo.png" alt="Brand-logo">
+         </div>
+         <ul class="lg:flex items-center gap-10 font-medium font-interFont text-peraSeondColor hidden">
+            <li class="relative group">
+               <a href="#" class="flex active items-center gap-1">Home<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/index.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Multipurpose
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="/Home/fashion.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Fashion
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Electronice
+                        Home</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Shop<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <div class="absolute -left-100 top-full mt-5 w-250  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-6 py-10 border border-[#ddd]">
+                  <div class="grid grid-cols-4">
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP LAYOUTS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — left sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — Right sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">List View</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Product Details</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP TOOLS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           CATEGORIES</h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <img class="w-full h-full rounded-2xl" src="./image/nav-img.jpg" alt="navImage">
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Pages<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/PagesFolder/about.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">About
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/contact.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Contact
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/FAQ.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/404.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">404
+                        Error
+                        Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Checkout
+                        Flow</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">User<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/UserFolder/login.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Sign
+                        in</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/register.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Create
+                        Account</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/dashboard.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Account
+                        Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/history.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Order
+                        History</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/tracking.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Tracker
+                        order</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/wishlist.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Wishlist</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Blog<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        grid</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        list</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        details</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Support<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Contact
+                        us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Track
+                        order</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Legal<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/LegalFolder/privacy-policy.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Privacy
+                        policy</a>
+                  </li>
+                  <li>
+                     <a href="/LegalFolder/trams-conditions.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Trams
+                        & conditions</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="flex gap-3 text-peraSeondColor">
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-search"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-heart"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  3</div>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-person"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-bag"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  2</div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-15 bg-bgColorOne">
+      <div class="max-w-7xl mx-auto px-4 lg:px-0">
+         <ul>
+            <a class="text-hoverPeraColor font-interFont hover:text-brandColor transition-all"
+               href="/index.html">Home</a>
+            <i class="bi bi-chevron-right text-hoverFs text-hoverPeraColor"></i>
+            <a class="text-hoverPeraColor font-interFont" href="#">My Account</a>
+         </ul>
+         <h2 class="lg:text-primaryFs text-2xl text-peraSeondColor font-Fraunces mb-2 mt-2 font-semibold">Welcome back,
+            September
+         </h2>
+         <p class="text-PeraFs font-interFont text-hoverPeraColor">Manage orders, addresses and account details.</p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- My Account Section Start -->
+   <section class="bg-bgColorTwo font-interFont">
+      <div class="max-w-7xl mx-auto lg:py-25 py-15">
+         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-4 bg-white h-70 rounded-2xl shadow-cardShadow p-6 font-interFont">
+               <ul class="flex flex-col gap-3">
+                  <li class="bg-footerBgColor text-sm font-interFont text-white p-3 px-3 rounded-full">Dashboard
+                     NovaShop</li>
+                  <li class="hover:text-btnHoverColor transition-all">Order history</li>
+                  <li class="hover:text-btnHoverColor transition-all">Track order</li>
+                  <li class="hover:text-btnHoverColor transition-all">Wishlist</li>
+                  <li class="hover:text-btnHoverColor transition-all">Payment methods</li>
+                  <li class="hover:text-btnHoverColor transition-all">Sign out</li>
+               </ul>
+            </div>
+            <div class="lg:col-span-8">
+               <section class="space-y-12 w-full ">
+                  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full grow space-y-8">
+                     <!-- Metric Cards Section -->
+                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- Orders Card -->
+                        <div
+                           class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+                           <div
+                              class="flex items-center space-x-2 text-xs font-semibold tracking-wider text-brandColor uppercase mb-3">
+                              <div class="w-4 h-px bg-brandColor"></div>
+                              <span>Orders</span>
+                           </div>
+                           <div class="text-4xl font-Fraunces font-bold text-slate-900 tracking-tight mb-1"
+                              id="dash-orders-counter" data-target="150">0</div>
+                           <p class="text-sm text-slate-500">Lifetime orders</p>
+                        </div>
+                        <!-- Wishlist Card -->
+                        <div
+                           class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden group">
+                           <div
+                              class="flex items-center space-x-2 text-xs font-semibold tracking-wider text-brandColor uppercase mb-3">
+                              <div class="w-4 h-px bg-brandColor"></div>
+                              <span>Wishlist</span>
+                           </div>
+                           <div class="text-4xl font-Fraunces font-bold text-slate-900 tracking-tight mb-1"
+                              id="dash-wishlist-counter" data-target="250">0</div>
+                           <p class="text-sm text-slate-500">Saved items</p>
+                        </div>
+                        <!-- Reward Points Card -->
+                        <div
+                           class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-shadow relative overflow-hidden group sm:col-span-2 lg:col-span-1">
+                           <div
+                              class="flex items-center space-x-2 text-xs font-semibold tracking-wider text-brandColor uppercase mb-3">
+                              <div class="w-4 h-px bg-brandColor"></div>
+                              <span>Reward Points</span>
+                           </div>
+                           <div class="text-4xl font-Fraunces font-bold text-slate-900 tracking-tight mb-1"
+                              id="dash-points-counter" data-target="1240">0</div>
+                           <p class="text-sm text-slate-500">= $<span id="dash-credit-value">12.40</span> credit</p>
+                        </div>
+                     </div>
+                     <!-- Recent Orders Table Section -->
+                     <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                        <div class="p-6 pb-4 flex items-center justify-between border-b border-slate-100">
+                           <h2 class="text-lg font-bold text-slate-900">Recent orders</h2>
+                           <button onclick="dashViewAllOrders()"
+                              class="text-sm font-semibold text-emerald-800 hover:text-emerald-950 transition-colors cursor-pointer">View
+                              all</button>
+                        </div>
+                        <div class="overflow-x-auto">
+                           <table class="w-full text-left border-collapse">
+                              <thead>
+                                 <tr class="border-b border-slate-100 text-xs font-bold text-slate-500 tracking-wider">
+                                    <th class="py-4 px-6 uppercase">Order</th>
+                                    <th class="py-4 px-6 uppercase">Date</th>
+                                    <th class="py-4 px-6 uppercase">Status</th>
+                                    <th class="py-4 px-6 uppercase">Total</th>
+                                    <th class="py-4 px-6 uppercase text-right">Action</th>
+                                 </tr>
+                              </thead>
+                              <tbody class="divide-y divide-slate-100 text-sm font-medium text-slate-700">
+                                 <!-- Order Row 1 -->
+                                 <tr class="hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-4 px-6 font-semibold text-slate-900">#NV-10432</td>
+                                    <td class="py-4 px-6 text-slate-500">Jul 2, 2026</td>
+                                    <td class="py-4 px-6">
+                                       <span
+                                          class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wider bg-emerald-100 text-emerald-800">
+                                          DELIVERED
+                                       </span>
+                                    </td>
+                                    <td class="py-4 px-6 font-bold text-slate-900">$149.00</td>
+                                    <td class="py-4 px-6 text-right">
+                                       <button onclick="dashTrackOrder('#NV-10432', 'Delivered')"
+                                          class="text-emerald-800 hover:text-emerald-950 font-semibold text-sm transition-colors cursor-pointer">Track</button>
+                                    </td>
+                                 </tr>
+                                 <!-- Order Row 2 -->
+                                 <tr class="hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-4 px-6 font-semibold text-slate-900">#NV-10411</td>
+                                    <td class="py-4 px-6 text-slate-500">Jun 21, 2026</td>
+                                    <td class="py-4 px-6">
+                                       <span
+                                          class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wider bg-emerald-100/70 text-emerald-800">
+                                          SHIPPED
+                                       </span>
+                                    </td>
+                                    <td class="py-4 px-6 font-bold text-slate-900">$96.00</td>
+                                    <td class="py-4 px-6 text-right">
+                                       <button onclick="dashTrackOrder('#NV-10411', 'Shipped')"
+                                          class="text-emerald-800 hover:text-emerald-950 font-semibold text-sm transition-colors cursor-pointer">Track</button>
+                                    </td>
+                                 </tr>
+                                 <!-- Order Row 3 -->
+                                 <tr class="hover:bg-slate-50/50 transition-colors">
+                                    <td class="py-4 px-6 font-semibold text-slate-900">#NV-10390</td>
+                                    <td class="py-4 px-6 text-slate-500">Jun 3, 2026</td>
+                                    <td class="py-4 px-6">
+                                       <span
+                                          class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold tracking-wider bg-emerald-50 text-emerald-700 border border-emerald-200">
+                                          PROCESSING
+                                       </span>
+                                    </td>
+                                    <td class="py-4 px-6 font-bold text-slate-900">$64.00</td>
+                                    <td class="py-4 px-6 text-right">
+                                       <button onclick="dashTrackOrder('#NV-10390', 'Processing')"
+                                          class="text-emerald-800 hover:text-emerald-950 font-semibold text-sm transition-colors cursor-pointer">Track</button>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+
+                     <!-- Account Details Form Section -->
+                     <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 sm:p-8">
+                        <h2 class="text-lg font-bold text-slate-900 mb-6">Account details</h2>
+                        <form id="dash-account-form" onsubmit="dashHandleSave(event)" class="space-y-6">
+                           <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                              <!-- First Name Input -->
+                              <div class="space-y-2">
+                                 <label for="dash-firstname"
+                                    class="block text-xs font-bold uppercase text-slate-500 tracking-wider">First
+                                    name</label>
+                                 <input type="text" id="dash-firstname" name="firstname" value="Jane" required
+                                    class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 focus:outline-none focus:border-emerald-800 focus:ring-1 focus:ring-emerald-800 transition-all text-sm font-medium">
+                              </div>
+                              <!-- Last Name Input -->
+                              <div class="space-y-2">
+                                 <label for="dash-lastname"
+                                    class="block text-xs font-bold uppercase text-slate-500 tracking-wider">Last
+                                    name</label>
+                                 <input type="text" id="dash-lastname" name="lastname" value="Doe" required
+                                    class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 focus:outline-none focus:border-emerald-800 focus:ring-1 focus:ring-emerald-800 transition-all text-sm font-medium">
+                              </div>
+                              <!-- Email Input -->
+                              <div class="space-y-2">
+                                 <label for="dash-email"
+                                    class="block text-xs font-bold uppercase text-slate-500 tracking-wider">Email</label>
+                                 <input type="email" id="dash-email" name="email" value="jane.doe@example.com" required
+                                    class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 focus:outline-none focus:border-emerald-800 focus:ring-1 focus:ring-emerald-800 transition-all text-sm font-medium">
+                              </div>
+                              <!-- Phone Input -->
+                              <div class="space-y-2">
+                                 <label for="dash-phone"
+                                    class="block text-xs font-bold uppercase text-slate-500 tracking-wider">Phone</label>
+                                 <input type="tel" id="dash-phone" name="phone" value="+1 555 010 2933" required
+                                    class="w-full px-4 py-3 bg-white border border-slate-200 rounded-xl text-slate-800 focus:outline-none focus:border-emerald-800 focus:ring-1 focus:ring-emerald-800 transition-all text-sm font-medium">
+                              </div>
+                           </div>
+                           <!-- Submit Button -->
+                           <div class="pt-2">
+                              <button type="submit" id="dash-save-btn"
+                                 class="bg-brandColor hover:bg-btnHoverColor text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-all text-sm flex items-center justify-center space-x-2 cursor-pointer">
+                                 <span>Save changes</span>
+                              </button>
+                           </div>
+                        </form>
+                     </div>
+                  </main>
+               </section>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- My Account Section End -->
+
+   <!-- Footer Section Start -->
+   <section class="bg-footerBgColor text-white py-16 font-interFont px-4 lg:px-0">
+      <div class="container max-w-7xl mx-auto ">
+         <div class="grid lg:grid-cols-6 md:grid-cols-2 gap-10">
+            <div class="col-span-2">
+               <img src="/image/logo-white.png" alt="FooterImage">
+               <p class="text-[#ffffff80] mb-5 mt-8 leading-7 text-[15px]">Considered essentials for everyday living —
+                  <br>
+                  designed with
+                  restraint,
+                  made to
+                  last, priced <br> fairly.
+                  Shipping worldwide from our studio.
+               </p>
+               <ul class="flex items-center gap-4 mt-6">
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-instagram"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-facebook"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-pinterest"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-twitter-x"></i>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">SHOP</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">New arrivals</li>
+                  <li class="hover:text-white transition-all duration-100">Best sellers</li>
+                  <li class="hover:text-white transition-all duration-100">Sale</li>
+                  <li class="hover:text-white transition-all duration-100">Compare</li>
+                  <li class="hover:text-white transition-all duration-100">Wishlist</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">ACCOUNT</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Sign in</li>
+                  <li class="hover:text-white transition-all duration-100">Create account</li>
+                  <li class="hover:text-white transition-all duration-100">Track order</li>
+                  <li class="hover:text-white transition-all duration-100">Dashboard</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">COMPANY</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">About us</li>
+                  <li class="hover:text-white transition-all duration-100">Journal</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">FAQ</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">LEGAL</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Privacy policy</li>
+                  <li class="hover:text-white transition-all duration-100">Terms & conditions</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">Shipping & returns</li>
+               </ul>
+            </div>
+         </div>
+         <ul class="border-t mt-10 border-t-[#ffffff1a] lg:flex items-center justify-between">
+            <li class="mt-6 text-[15px] text-[#8b8f96]">© 2026 Plan Code Deploy. All rights reserved.</li>
+            <div class="flex items-center gap-3 text-[12px] text-[#8b8f96]">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </ul>
+      </div>
+   </section>
+   <!-- Footer Section End -->
+
+   <script>
+      // Functional animated counters initialization
+      function dashAnimateCounters() {
+         const counters = document.querySelectorAll('[id^="dash-"][id$="-counter"]');
+         const speed = 100; // Animation speed tick
+
+         counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+
+            const updateCount = () => {
+               const inc = Math.ceil(target / speed);
+               count += inc;
+
+               if (count < target) {
+                  counter.innerText = target > 999 ? count.toLocaleString() : count;
+                  setTimeout(updateCount, 20);
+               } else {
+                  counter.innerText = target > 999 ? target.toLocaleString() : target;
+               }
+            };
+
+            updateCount();
+         });
+      }
+
+      // Run animation when loaded
+      if (document.readyState === 'complete') {
+         dashAnimateCounters();
+      } else {
+         window.addEventListener('DOMContentLoaded', dashAnimateCounters);
+      }
+
+      // Toast notification handler
+      function dashShowToast(message) {
+         const toast = document.getElementById('dash-toast');
+         const toastMsg = document.getElementById('dash-toast-message');
+         toastMsg.innerText = message;
+
+         toast.classList.remove('translate-y-20', 'opacity-0');
+         toast.classList.add('translate-y-0', 'opacity-100');
+
+         setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-20', 'opacity-0');
+         }, 3500);
+      }
+
+      // Account form save action handler
+      function dashHandleSave(event) {
+         event.preventDefault();
+         const btn = document.getElementById('dash-save-btn');
+         const originalText = btn.innerHTML;
+
+         btn.innerHTML = `<svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Saving...`;
+         btn.disabled = true;
+
+         setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            dashShowToast('Your account details have been successfully saved!');
+         }, 800);
+      }
+
+      // Table Track action click handler
+      function dashTrackOrder(orderId, status) {
+         dashShowToast(`Tracking ${orderId} — Status: ${status}`);
+      }
+
+      // View All Orders click handler
+      function dashViewAllOrders() {
+         dashShowToast('Opening full order history list...');
+      }
+   </script>
+
+   <!-- Swiper JS cdn Link -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.cjs"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper One Script -->
+
+   <script src="/script.js"></script>
+
+</body>
+
+</html>
