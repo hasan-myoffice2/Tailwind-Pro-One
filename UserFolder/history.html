@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro No One</title>
+   <!-- Swiper JS CDN Link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Bootstrap Icons Link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="/src/output.css">
+</head>
+
+<body>
+   <div class="fixed customCursor pointer-events-none left-0 top-0 z-9999 flex h-10 w-10
+          -translate-x-1/2 -translate-y-1/2 items-center justify-center
+          rounded-full border-2 border-[#0C5ECF]">
+      <div class="h-3 w-3 rounded-full bg-[#0C5ECF]"></div>
+   </div>
+   <!-- Navbar Section Start -->
+   <nav class="py-6 shadow-navShadow bg-navBgColor font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl m-auto flex items-center justify-between">
+         <div class="lg:hidden block"><i class="bi bi-list text-2xl"></i></div>
+         <div class="brand-name">
+            <img src="/image/BrandLogo.png" alt="Brand-logo">
+         </div>
+         <ul class="lg:flex items-center gap-10 font-medium font-interFont text-peraSeondColor hidden">
+            <li class="relative group">
+               <a href="#" class="flex active items-center gap-1">Home<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/index.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Multipurpose
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="/Home/fashion.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Fashion
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Electronice
+                        Home</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Shop<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <div class="absolute -left-100 top-full mt-5 w-250  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-6 py-10 border border-[#ddd]">
+                  <div class="grid grid-cols-4">
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP LAYOUTS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — left sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — Right sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">List View</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Product Details</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP TOOLS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           CATEGORIES</h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <img class="w-full h-full rounded-2xl" src="./image/nav-img.jpg" alt="navImage">
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Pages<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/PagesFolder/about.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">About
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/contact.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Contact
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/FAQ.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="/PagesFolder/404.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">404
+                        Error
+                        Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Checkout
+                        Flow</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">User<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/UserFolder/login.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Sign
+                        in</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/register.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Create
+                        Account</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/dashboard.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Account
+                        Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/history.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Order
+                        History</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/tracking.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Tracker
+                        order</a>
+                  </li>
+                  <li>
+                     <a href="/UserFolder/wishlist.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Wishlist</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Blog<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        grid</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        list</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        details</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Support<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Contact
+                        us</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Track
+                        order</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Legal<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="/LegalFolder/privacy-policy.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Privacy
+                        policy</a>
+                  </li>
+                  <li>
+                     <a href="/LegalFolder/trams-conditions.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Trams
+                        & conditions</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="flex gap-3 text-peraSeondColor">
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-search"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-heart"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  3</div>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-[16px] bi-person"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-[16px] bi-bag"></i>
+               <div
+                  class="absolute -top-2.5 right-0 text-[11px] bg-brandColor text-[#fff] w-5 h-5 flex items-center justify-center rounded-full">
+                  2</div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-15 bg-bgColorOne">
+      <div class="max-w-7xl mx-auto px-4 lg:px-0">
+         <ul>
+            <a class="text-hoverPeraColor font-interFont hover:text-brandColor transition-all"
+               href="/index.html">Home</a>
+            <i class="bi bi-chevron-right text-hoverFs text-hoverPeraColor"></i>
+            <a class="text-hoverPeraColor font-interFont" href="/UserFolder/dashboard.html">Account</a>
+            <i class="bi bi-chevron-right text-hoverFs text-hoverPeraColor"></i>
+            <a class="text-hoverPeraColor font-interFont hover:text-brandColor transition-all" href="/index.html">Order
+               History</a>
+         </ul>
+         <h2 class="lg:text-primaryFs text-2xl text-peraSeondColor font-Fraunces mt-2 font-semibold">Order history
+         </h2>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- My Account Section Start -->
+   <section class="bg-bgColorTwo font-interFont">
+      <div class="mx-auto max-w-7xl px-4 py-15 lg:py-25">
+         <div class="grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <!-- =========================
+                 SIDEBAR
+            ========================== -->
+            <div class="h-fit rounded-2xl bg-white p-6 font-interFont shadow-cardShadow lg:col-span-4">
+               <ul class="flex flex-col gap-3">
+                  <li class="transition-all hover:text-btnHoverColor">
+                     Dashboard NovaShop
+                  </li>
+                  <li
+                     class="transition-all px-3 py-3 rounded-full bg-footerBgColor text-white hover:text-btnHoverColor">
+                     Order history
+                  </li>
+                  <li class="transition-all hover:text-btnHoverColor">
+                     Track order
+                  </li>
+                  <li class="transition-all hover:text-btnHoverColor">
+                     Wishlist
+                  </li>
+                  <li class="transition-all hover:text-btnHoverColor">
+                     Payment methods
+                  </li>
+                  <li class="transition-all hover:text-btnHoverColor">
+                     Sign out
+                  </li>
+               </ul>
+            </div>
+
+            <section class="min-w-0 lg:col-span-8">
+               <div class="overflow-hidden rounded-[20px] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+                  <!-- Desktop -->
+                  <div class="hidden overflow-x-auto md:block">
+                     <table class="w-full min-w-200 border-collapse">
+                        <!-- Header -->
+                        <thead>
+                           <tr class="border-b border-[#D9DDE3]">
+                              <th
+                                 class="px-6 py-7 text-left text-[12px] font-semibold uppercase tracking-wide text-footerBgColor">
+                                 Order
+                              </th>
+                              <th
+                                 class="px-4 py-7 text-left text-[12px] font-semibold uppercase tracking-wide text-footerBgColor">
+                                 Date
+                              </th>
+                              <th
+                                 class="px-4 py-7 text-left text-[12px] font-semibold uppercase tracking-wide text-footerBgColor">
+                                 Items
+                              </th>
+                              <th
+                                 class="px-4 py-7 text-left text-[12px] font-semibold uppercase tracking-wide text-footerBgColor">
+                                 Status
+                              </th>
+                              <th
+                                 class="px-4 py-7 text-left text-[12px] font-semibold uppercase tracking-wide text-footerBgColor">
+                                 Total
+                              </th>
+                              <th class="px-6 py-7 text-right"></th>
+                           </tr>
+                        </thead>
+                        <!-- Body -->
+                        <tbody>
+                           <!-- Row 1 -->
+                           <tr class="border-b border-[#D9DDE3]">
+                              <td class="px-6 py-4.5 text-hoverFs font-medium text-footerBgColor">
+                                 #NV-10432
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 Jul 2, 2026
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 2 items
+                              </td>
+                              <td class="px-4 py-4.5">
+                                 <span
+                                    class="inline-flex rounded-full bg-[#E8F1EC] px-3 py-1.75 font-mono text-2.25 uppercase tracking-wide text-[#287154]">
+                                    Delivered
+                                 </span>
+                              </td>
+                              <td class="px-4 py-4.5 text-[13px] font-bold text-[#111111]">
+                                 $149.00
+                              </td>
+                              <td class="px-6 py-4.5 text-right">
+                                 <button
+                                    class="rounded-full border border-[#111111] px-4.5 py-2.25 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                                    Track
+                                 </button>
+                              </td>
+                           </tr>
+
+
+                           <!-- Row 2 -->
+                           <tr class="border-b border-[#D9DDE3]">
+                              <td class="px-6 py-4.5 text-hoverFs font-medium text-footerBgColor">
+                                 #NV-10411
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 Jun 21, 2026
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 1 item
+                              </td>
+                              <td class="px-4 py-4.5">
+                                 <span
+                                    class="inline-flex rounded-full bg-[#315CF6] px-3 py-1.75 font-mono text-2.25 uppercase tracking-wide text-white">
+                                    Shipped
+                                 </span>
+                              </td>
+                              <td class="px-4 py-4.5 text-[13px] font-bold text-[#111111]">
+                                 $96.00
+                              </td>
+                              <td class="px-6 py-4.5 text-right">
+                                 <button
+                                    class="rounded-full border border-[#111111] px-4.5 py-2.25 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                                    Track
+                                 </button>
+                              </td>
+                           </tr>
+                           <!-- Row 3 -->
+                           <tr class="border-b border-[#D9DDE3]">
+
+                              <td class="px-6 py-4.5 text-hoverFs font-medium text-footerBgColor">
+                                 #NV-10390
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 Jun 3, 2026
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 1 item
+                              </td>
+                              <td class="px-4 py-4.5">
+                                 <span
+                                    class="inline-flex rounded-full bg-[#EEEEEE] px-3 py-1.75 font-mono text-2.25 uppercase tracking-wide text-[#555555]">
+                                    Processing
+                                 </span>
+                              </td>
+                              <td class="px-4 py-4.5 text-[13px] font-bold text-[#111111]">
+                                 $64.00
+                              </td>
+                              <td class="px-6 py-4.5 text-right">
+                                 <button
+                                    class="rounded-full border border-[#111111] px-4.5 py-2.25 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                                    Track
+                                 </button>
+                              </td>
+                           </tr>
+
+                           <!-- Row 4 -->
+                           <tr class="border-b border-[#D9DDE3]">
+                              <td class="px-6 py-4.5 text-hoverFs font-medium text-footerBgColor">
+                                 #NV-10355
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 May 18, 2026
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 3 items
+                              </td>
+                              <td class="px-4 py-4.5">
+                                 <span
+                                    class="inline-flex rounded-full bg-[#E8F1EC] px-3 py-1.75 font-mono text-2.25 uppercase tracking-wide text-[#287154]">
+                                    Delivered
+                                 </span>
+                              </td>
+                              <td class="px-4 py-4.5 text-[13px] font-bold text-[#111111]">
+                                 $212.00
+                              </td>
+                              <td class="px-6 py-4.5 text-right">
+                                 <button
+                                    class="rounded-full border border-[#111111] px-4.5 py-2.25 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                                    Track
+                                 </button>
+                              </td>
+                           </tr>
+                           <!-- Row 5 -->
+                           <tr>
+                              <td class="px-6 py-4.5 text-hoverFs font-medium text-footerBgColor">
+                                 #NV-10312
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 Apr 29, 2026
+                              </td>
+                              <td class="px-4 py-4.5 text-hoverFs text-footerBgColor">
+                                 1 item
+                              </td>
+                              <td class="px-4 py-4.5">
+                                 <span
+                                    class="inline-flex rounded-full bg-[#D83B2D] px-3 py-1.75 font-mono text-2.25 uppercase tracking-wide text-white">
+                                    Cancelled
+                                 </span>
+                              </td>
+                              <td class="px-4 py-4.5 text-[13px] font-bold text-[#111111]">
+                                 $58.00
+                              </td>
+                              <td class="px-6 py-4.5 text-right">
+                                 <button
+                                    class="rounded-full border border-[#111111] px-4.5 py-2.25 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                                    Reorder
+                                 </button>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+
+                  <!-- =========================
+                         MOBILE
+                    ========================== -->
+                  <div class="divide-y divide-[#D9DDE3] md:hidden">
+                     <!-- Order 1 -->
+                     <div class="p-5">
+                        <div class="mb-4 flex items-center justify-between">
+                           <span class="text-hoverFs font-semibold text-footerBgColor">
+                              #NV-10432
+                           </span>
+                           <span
+                              class="rounded-full bg-[#E8F1EC] px-3 py-1.5 font-mono text-2.25 uppercase tracking-wide text-[#287154]">
+                              Delivered
+                           </span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-y-3 text-[13px]">
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Date</p>
+                              <p>Jul 2, 2026</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Items</p>
+                              <p>2 items</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Total</p>
+                              <p class="font-bold">$149.00</p>
+                           </div>
+                        </div>
+                        <button
+                           class="mt-5 w-full rounded-full border border-[#111111] py-2.5 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                           Track
+                        </button>
+                     </div>
+                     <!-- Order 2 -->
+                     <div class="p-5">
+                        <div class="mb-4 flex items-center justify-between">
+                           <span class="text-hoverFs font-semibold">
+                              #NV-10411
+                           </span>
+                           <span
+                              class="rounded-full bg-[#315CF6] px-3 py-1.5 font-mono text-2.25 uppercase tracking-wide text-white">
+                              Shipped
+                           </span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-y-3 text-[13px]">
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Date</p>
+                              <p>Jun 21, 2026</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Items</p>
+                              <p>1 item</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Total</p>
+                              <p class="font-bold">$96.00</p>
+                           </div>
+                        </div>
+                        <button
+                           class="mt-5 w-full rounded-full border border-[#111111] py-2.5 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                           Track
+                        </button>
+                     </div>
+                     <!-- Order 3 -->
+                     <div class="p-5">
+                        <div class="mb-4 flex items-center justify-between">
+                           <span class="text-hoverFs font-semibold">
+                              #NV-10390
+                           </span>
+                           <span
+                              class="rounded-full bg-[#EEEEEE] px-3 py-1.5 font-mono text-2.25 uppercase tracking-wide text-[#555555]">
+                              Processing
+                           </span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-y-3 text-[13px]">
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Date</p>
+                              <p>Jun 3, 2026</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Items</p>
+                              <p>1 item</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Total</p>
+                              <p class="font-bold">$64.00</p>
+                           </div>
+                        </div>
+                        <button
+                           class="mt-5 w-full rounded-full border border-[#111111] py-2.5 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                           Track
+                        </button>
+                     </div>
+                     <!-- Order 4 -->
+                     <div class="p-5">
+                        <div class="mb-4 flex items-center justify-between">
+                           <span class="text-hoverFs font-semibold">
+                              #NV-10355
+                           </span>
+                           <span
+                              class="rounded-full bg-[#E8F1EC] px-3 py-1.5 font-mono text-2.25 uppercase tracking-wide text-[#287154]">
+                              Delivered
+                           </span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-y-3 text-[13px]">
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Date</p>
+                              <p>May 18, 2026</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Items</p>
+                              <p>3 items</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Total</p>
+                              <p class="font-bold">$212.00</p>
+                           </div>
+                        </div>
+                        <button
+                           class="mt-5 w-full rounded-full border border-[#111111] py-2.5 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                           Track
+                        </button>
+                     </div>
+                     <!-- Order 5 -->
+                     <div class="p-5">
+                        <div class="mb-4 flex items-center justify-between">
+                           <span class="text-hoverFs font-semibold">
+                              #NV-10312
+                           </span>
+                           <span
+                              class="rounded-full bg-[#D83B2D] px-3 py-1.5 font-mono text-2.25 uppercase tracking-wide text-white">
+                              Cancelled
+                           </span>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-y-3 text-[13px]">
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Date</p>
+                              <p>Apr 29, 2026</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Items</p>
+                              <p>1 item</p>
+                           </div>
+                           <div>
+                              <p class="mb-1 text-[10px] uppercase text-[#888888]">Total</p>
+                              <p class="font-bold">$58.00</p>
+                           </div>
+                        </div>
+                        <button
+                           class="mt-5 w-full rounded-full border border-[#111111] py-2.5 text-[12px] font-semibold transition hover:bg-[#111111] hover:text-white">
+                           Reorder
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+   </section>
+   <!-- My Account Section End -->
+
+   <!-- Footer Section Start -->
+   <section class="bg-footerBgColor text-white py-16 font-interFont px-4 lg:px-0">
+      <div class="container max-w-7xl mx-auto ">
+         <div class="grid lg:grid-cols-6 md:grid-cols-2 gap-10">
+            <div class="col-span-2">
+               <img src="/image/logo-white.png" alt="FooterImage">
+               <p class="text-[#ffffff80] mb-5 mt-8 leading-7 text-[15px]">Considered essentials for everyday living —
+                  <br>
+                  designed with
+                  restraint,
+                  made to
+                  last, priced <br> fairly.
+                  Shipping worldwide from our studio.
+               </p>
+               <ul class="flex items-center gap-4 mt-6">
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-instagram"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-facebook"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-pinterest"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-twitter-x"></i>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">SHOP</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">New arrivals</li>
+                  <li class="hover:text-white transition-all duration-100">Best sellers</li>
+                  <li class="hover:text-white transition-all duration-100">Sale</li>
+                  <li class="hover:text-white transition-all duration-100">Compare</li>
+                  <li class="hover:text-white transition-all duration-100">Wishlist</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">ACCOUNT</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Sign in</li>
+                  <li class="hover:text-white transition-all duration-100">Create account</li>
+                  <li class="hover:text-white transition-all duration-100">Track order</li>
+                  <li class="hover:text-white transition-all duration-100">Dashboard</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">COMPANY</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">About us</li>
+                  <li class="hover:text-white transition-all duration-100">Journal</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">FAQ</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">LEGAL</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Privacy policy</li>
+                  <li class="hover:text-white transition-all duration-100">Terms & conditions</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">Shipping & returns</li>
+               </ul>
+            </div>
+         </div>
+         <ul class="border-t mt-10 border-t-[#ffffff1a] lg:flex items-center justify-between">
+            <li class="mt-6 text-[15px] text-[#8b8f96]">© 2026 Plan Code Deploy. All rights reserved.</li>
+            <div class="flex items-center gap-3 text-[12px] text-[#8b8f96]">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </ul>
+      </div>
+   </section>
+   <!-- Footer Section End -->
+
+   <script>
+      // Functional animated counters initialization
+      function dashAnimateCounters() {
+         const counters = document.querySelectorAll('[id^="dash-"][id$="-counter"]');
+         const speed = 100; // Animation speed tick
+
+         counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            let count = 0;
+
+            const updateCount = () => {
+               const inc = Math.ceil(target / speed);
+               count += inc;
+
+               if (count < target) {
+                  counter.innerText = target > 999 ? count.toLocaleString() : count;
+                  setTimeout(updateCount, 20);
+               } else {
+                  counter.innerText = target > 999 ? target.toLocaleString() : target;
+               }
+            };
+
+            updateCount();
+         });
+      }
+
+      // Run animation when loaded
+      if (document.readyState === 'complete') {
+         dashAnimateCounters();
+      } else {
+         window.addEventListener('DOMContentLoaded', dashAnimateCounters);
+      }
+
+      // Toast notification handler
+      function dashShowToast(message) {
+         const toast = document.getElementById('dash-toast');
+         const toastMsg = document.getElementById('dash-toast-message');
+         toastMsg.innerText = message;
+
+         toast.classList.remove('translate-y-20', 'opacity-0');
+         toast.classList.add('translate-y-0', 'opacity-100');
+
+         setTimeout(() => {
+            toast.classList.remove('translate-y-0', 'opacity-100');
+            toast.classList.add('translate-y-20', 'opacity-0');
+         }, 3500);
+      }
+
+      // Account form save action handler
+      function dashHandleSave(event) {
+         event.preventDefault();
+         const btn = document.getElementById('dash-save-btn');
+         const originalText = btn.innerHTML;
+
+         btn.innerHTML = `<svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white inline" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Saving...`;
+         btn.disabled = true;
+
+         setTimeout(() => {
+            btn.innerHTML = originalText;
+            btn.disabled = false;
+            dashShowToast('Your account details have been successfully saved!');
+         }, 800);
+      }
+
+      // Table Track action click handler
+      function dashTrackOrder(orderId, status) {
+         dashShowToast(`Tracking ${orderId} — Status: ${status}`);
+      }
+
+      // View All Orders click handler
+      function dashViewAllOrders() {
+         dashShowToast('Opening full order history list...');
+      }
+   </script>
+
+   <!-- Swiper JS cdn Link -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.cjs"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper One Script -->
+
+   <script src="/script.js"></script>
+
+</body>
+
+</html>s
