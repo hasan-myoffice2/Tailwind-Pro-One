@@ -17,9 +17,7 @@
    <div class="fixed customCursor pointer-events-none left-0 top-0 z-9999 flex h-10 w-10
           -translate-x-1/2 -translate-y-1/2 items-center justify-center
           rounded-full border-2 border-[#0C5ECF]">
-
       <div class="h-3 w-3 rounded-full bg-[#0C5ECF]"></div>
-
    </div>
    <!-- Navbar Section Start -->
    <nav class="py-6 shadow-cardShadow border-b border-b-gray-300 bg-navBgColor font-interFont px-4 lg:px-0">
@@ -443,7 +441,36 @@
    </section>
    <!-- Footer Section End -->
 
-   <script src="../script.js"></script>
+   <script>
+      const cursor = document.querySelector('.customCursor');
+
+      // mouse position
+      let mouseX = 0;
+      let mouseY = 0;
+      // cursor position
+      let cursorX = 0;
+      let cursorY = 0;
+
+      // mouse moveing
+      document.addEventListener('mousemove', (e) => {
+         mouseX = e.clientX;
+         mouseY = e.clientY;
+      })
+
+      // Animate cursor
+      function animateCursor() {
+         cursorX += (mouseX - cursorX) * 0.15;
+         cursorY += (mouseY - cursorY) * 0.15;
+
+         cursor.style.left = cursorX + 'px';
+         cursor.style.top = cursorY + 'px';
+         requestAnimationFrame(animateCursor)
+      }
+      animateCursor()
+
+
+
+   </script>
 
 </body>
 
