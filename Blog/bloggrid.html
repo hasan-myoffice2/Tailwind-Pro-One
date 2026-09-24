@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pro No One</title>
+   <!-- Swiper JS CDN Link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Bootstrap Icons Link-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+   <!-- Tailwind CSS Link -->
+   <link rel="stylesheet" href="../src/output.css">
+   <!-- FontAwesome Icons CDN Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" />
+</head>
+
+<body>
+   <div class="fixed customCursor pointer-events-none left-0 top-0 z-9999 flex h-10 w-10
+          -translate-x-1/2 -translate-y-1/2 items-center justify-center
+          rounded-full border-2 border-[#0C5ECF]">
+      <div class="h-3 w-3 rounded-full bg-[#0C5ECF]"></div>
+   </div>
+   <!-- Navbar Section Start -->
+   <nav class="py-6 shadow-cardShadow border-b border-b-gray-300 bg-navBgColor font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl m-auto flex items-center justify-between">
+         <div class="lg:hidden block"><i class="bi bi-list text-2xl"></i></div>
+         <div class="brand-name">
+            <img src="../image/BrandLogo.png" alt="Brand-logo">
+         </div>
+         <ul class="lg:flex items-center gap-10 font-medium font-interFont text-peraSeondColor hidden">
+            <li class="relative group">
+               <a href="#" class="flex active items-center gap-1">Home<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd] z-10">
+                  <li>
+                     <a href="../index.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Multipurpose
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="../Home/fashion.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Fashion
+                        Home</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Electronice
+                        Home</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Shop<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <div class="absolute -left-100 top-full mt-5 w-250  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-6 py-10 border border-[#ddd]">
+                  <div class="grid grid-cols-4">
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP LAYOUTS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — left sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Grid — Right sidebar</li>
+                           <li class="hover:text-brandColor transition-all duration-150">List View</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Product Details</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           SHOP TOOLS
+                        </h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <h2 class=" text-brandColor text-hoverHeaderFs font-Fraunces [word-spacing:8px] font-semibold">
+                           CATEGORIES</h2>
+                        <ul class="text-hoverFs text-hoverPeraColor flex flex-col gap-3 mt-7">
+                           <li class="hover:text-brandColor transition-all duration-150">Compare products</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Wishlist</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Shopping cart</li>
+                           <li class="hover:text-brandColor transition-all duration-150">Checkout</li>
+                        </ul>
+                     </div>
+                     <div>
+                        <img class="w-full h-full rounded-2xl" src="./image/nav-img.jpg" alt="navImage">
+                     </div>
+                  </div>
+               </div>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Pages<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="../PagesFolder/about.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">About
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="../PagesFolder/contact.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Contact
+                        Us</a>
+                  </li>
+                  <li>
+                     <a href="../PagesFolder/FAQ.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="../PagesFolder/404.html"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">404
+                        Error
+                        Page</a>
+                  </li>
+                  <li>
+                     <a href="#"
+                        class="block hover:text-brandColor transition-all duration-150 px-5 py-3 hover:bg-bgColorOne rounded-sm">Checkout
+                        Flow</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">User<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="../UserFolder/login.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Sign
+                        in</a>
+                  </li>
+                  <li>
+                     <a href="../UserFolder/register.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Create
+                        Account</a>
+                  </li>
+                  <li>
+                     <a href="../UserFolder/dashboard.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Account
+                        Dashboard</a>
+                  </li>
+                  <li>
+                     <a href="../UserFolder/history.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Order
+                        History</a>
+                  </li>
+                  <li>
+                     <a href="../UserFolder/tracking.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Tracker
+                        order</a>
+                  </li>
+                  <li>
+                     <a href="../UserFolder/wishlist.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Wishlist</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Blog<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="../Blog/bloggrid.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        grid</a>
+                  </li>
+                  <li>
+                     <a href="../Blog/bloglist.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        list</a>
+                  </li>
+                  <li>
+                     <a href="../Blog/blogdetails.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Blog
+                        details</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Support<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="../Support/faq.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">FAQ</a>
+                  </li>
+                  <li>
+                     <a href="../Support/contactus.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Contact
+                        us</a>
+                  </li>
+                  <li>
+                     <a href="../Support/trackorder.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Track
+                        order</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="relative group z-10">
+               <a href="#" class="flex items-center gap-1">Legal<span>
+                     <i
+                        class="bi bi-chevron-down text-[12px] inline-block transition-transform duration-300 group-hover:rotate-180"></i>
+                  </span></a>
+               <!-- Dropdown -->
+               <ul class="absolute left-0 top-full mt-5 w-55 text-hoverFs  bg-white shadow-lg rounded-lg
+               invisible opacity-0 translate-y-2
+               group-hover:visible group-hover:opacity-100 group-hover:translate-y-0
+               transition-all duration-300 p-3 border border-[#ddd]">
+                  <li>
+                     <a href="../LegalFolder/privacy-policy.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Privacy
+                        policy</a>
+                  </li>
+                  <li>
+                     <a href="../LegalFolder/trams-conditions.html"
+                        class="block px-5 py-3 hover:text-brandColor transition-all duration-150 hover:bg-bgColorOne rounded-sm">Trams
+                        & conditions</a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+         <div class="flex gap-3 text-peraSeondColor">
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-hoverHeaderFs bi-search"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-hoverHeaderFs bi-heart"></i>
+               <div
+                  class="absolute -top-3 right-0 text-[11px] bg-brandColor text-white w-5 h-5 flex items-center justify-center rounded-full">
+                  3</div>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 h-10 hidden border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full lg:flex items-center justify-center">
+               <i class="bi text-hoverHeaderFs bi-person"></i>
+            </div>
+            <div
+               class="w-10 hover:-translate-y-1 relative h-10 border border-[#e6e3db] hover:border-brandColor transition-all duration-300 rounded-full flex items-center justify-center">
+               <i class="bi text-hoverHeaderFs bi-bag"></i>
+               <div
+                  class="absolute -top-3 right-0 text-[11px] bg-brandColor text-white w-5 h-5 flex items-center justify-center rounded-full">
+                  2</div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Navbar Section End -->
+
+   <!-- Page Header Section Start -->
+   <section class="pageHeader py-15 bg-bgColorOne">
+      <div class="max-w-7xl mx-auto px-4 lg:px-0">
+         <ul>
+            <a class="text-hoverPeraColor font-interFont hover:text-brandColor transition-all"
+               href="/index.html">Home</a>
+            <i class="bi bi-chevron-right text-hoverFs text-hoverPeraColor"></i>
+            <a class="text-hoverPeraColor font-interFont" href="#">Journal</a>
+         </ul>
+         <h2 class="lg:text-primaryFs text-2xl text-peraSeondColor font-Fraunces mb-2 mt-2 font-semibold">
+            The Novena Journal
+         </h2>
+         <p class="font-interFont text-hoverPeraColor">Guides, stories and behind-the-scenes from our studio.</p>
+      </div>
+   </section>
+   <!-- Page Header Section End -->
+
+   <!-- Blog Grid Section Page Start -->
+   <section class="bg-bgColorTwo py-25 font-interFont px-4 lg:px-0">
+      <div class="max-w-7xl mx-auto">
+         <div class="mb-5 flex items-center justify-between">
+            <!-- Categories -->
+            <div class="flex flex-wrap items-center gap-2">
+               <button class="rounded-full bg-[#17191c] px-6 py-2 text-hoverFs font-medium text-white">
+                  All
+               </button>
+               <button
+                  class="rounded-full border border-[#e3e0da] px-6 py-2 text-hoverFs font-medium text-[#172033] transition hover:bg-[#17191c] hover:text-white">
+                  Guides
+               </button>
+               <button
+                  class="rounded-full border border-[#e3e0da] px-6 py-2 text-hoverFs font-medium text-[#172033] transition hover:bg-[#17191c] hover:text-white">
+                  Reviews
+               </button>
+               <button
+                  class="rounded-full border border-[#e3e0da] px-6 py-2 text-hoverFs font-medium text-[#172033] transition hover:bg-[#17191c] hover:text-white">
+                  Studio
+               </button>
+            </div>
+            <!-- List View -->
+            <button
+               class="rounded-full border whitespace-nowrap border-footerBgColor px-6 py-2 text-hoverFs font-medium text-footerBgColor transition hover:bg-footerBgColor hover:text-white">
+               List view
+            </button>
+         </div>
+
+         <!-- Blog Grid -->
+         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Card 01 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                  alt="Computer circuit board"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Guides
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     A considered guide to layering for autumn
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     Jul 12, 2026 · 6 min read
+                  </p>
+               </div>
+            </article>
+
+            <!-- Card 02 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80"
+                  alt="Headphones and keyboard"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Studio
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     Behind the scenes of our biggest sale yet
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     Jul 3, 2026 · 4 min read
+                  </p>
+               </div>
+            </article>
+            <!-- Card 03 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"
+                  alt="Creative workspace"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Reviews
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     Our wool overcoat, one winter later
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     Jun 24, 2026 · 5 min read
+                  </p>
+               </div>
+            </article>
+            <!-- Card 04 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=900&q=80"
+                  alt="Clothing store"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Guides
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     How to keep leather sneakers looking new
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     Jun 15, 2026 · 3 min read
+                  </p>
+               </div>
+            </article>
+            <!-- Card 05 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                  alt="Modern studio"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Studio
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     Inside the Porto workshop where our coats are made
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     Jun 2, 2026 · 7 min read
+                  </p>
+               </div>
+            </article>
+
+            <!-- Card 06 -->
+            <article class="rounded-md border border-[#777] p-3">
+               <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
+                  alt="Modern office"
+                  class="h-70 w-full transition-transform duration-500 rounded-xl object-cover ease-out hover:scale-102">
+               <div class="pt-5">
+                  <div class="mb-3 flex items-center gap-2">
+                     <span class="h-px w-4 bg-emerald-700"></span>
+                     <span class="font-mono text-[12px] uppercase tracking-[0.18em] text-emerald-700">
+                        Guides
+                     </span>
+                  </div>
+                  <h2 class="font-Fraunces text-[20px] font-semibold leading-[1.15] text-[#111827]">
+                     What's next for wearable health tech and other products
+                  </h2>
+                  <p class="mt-2 text-hoverFs text-[#344054]">
+                     May 20, 2026 · 4 min read
+                  </p>
+
+               </div>
+            </article>
+
+         </div>
+         <ul class="flex items-center justify-center gap-3 mt-5">
+            <li class="w-12 h-12 bg-btnHoverColor rounded-full flex items-center justify-center text-white">1</li>
+            <li
+               class="w-12 h-12 border-2 hover:bg-btnHoverColor hover:text-white border-gray-200 rounded-full flex items-center justify-center text-btnHoverColor">
+               2</li>
+            <li
+               class="w-12 h-12 border-2 hover:bg-btnHoverColor hover:text-white border-gray-200 rounded-full flex items-center justify-center text-btnHoverColor">
+               <i class="bi bi-arrow-right"></i>
+            </li>
+         </ul>
+      </div>
+   </section>
+   <!-- Blog Grid Section Page End -->
+
+   <!-- Footer Section Start -->
+   <section class="bg-footerBgColor text-white py-16 font-interFont px-4 lg:px-0">
+      <div class="container max-w-7xl mx-auto ">
+         <div class="grid lg:grid-cols-6 md:grid-cols-2 gap-10">
+            <div class="col-span-2">
+               <img src="/image/logo-white.png" alt="FooterImage">
+               <p class="text-[#ffffff80] mb-5 mt-8 leading-7 text-[15px]">Considered essentials for everyday living —
+                  <br>
+                  designed with
+                  restraint,
+                  made to
+                  last, priced <br> fairly.
+                  Shipping worldwide from our studio.
+               </p>
+               <ul class="flex items-center gap-4 mt-6">
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-instagram"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-facebook"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-pinterest"></i>
+                  </li>
+                  <li
+                     class="w-10 hover:-translate-y-1 h-10 flex transition-all duration-300 items-center justify-center border-[#ffffff80] hover:border-transparent hover:bg-brandColor border rounded-full">
+                     <i class="bi bi-twitter-x"></i>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">SHOP</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">New arrivals</li>
+                  <li class="hover:text-white transition-all duration-100">Best sellers</li>
+                  <li class="hover:text-white transition-all duration-100">Sale</li>
+                  <li class="hover:text-white transition-all duration-100">Compare</li>
+                  <li class="hover:text-white transition-all duration-100">Wishlist</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">ACCOUNT</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Sign in</li>
+                  <li class="hover:text-white transition-all duration-100">Create account</li>
+                  <li class="hover:text-white transition-all duration-100">Track order</li>
+                  <li class="hover:text-white transition-all duration-100">Dashboard</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">COMPANY</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">About us</li>
+                  <li class="hover:text-white transition-all duration-100">Journal</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">FAQ</li>
+               </ul>
+            </div>
+            <div>
+               <h3 class="font-medium text-[15px]">LEGAL</h3>
+               <ul class="mt-10 text-[15px] text-footerTextColor flex flex-col gap-3">
+                  <li class="hover:text-white transition-all duration-100">Privacy policy</li>
+                  <li class="hover:text-white transition-all duration-100">Terms & conditions</li>
+                  <li class="hover:text-white transition-all duration-100">Contact</li>
+                  <li class="hover:text-white transition-all duration-100">Shipping & returns</li>
+               </ul>
+            </div>
+         </div>
+         <ul class="border-t mt-10 border-t-[#ffffff1a] lg:flex items-center justify-between">
+            <li class="mt-6 text-[15px] text-[#8b8f96]">© 2026 Plan Code Deploy. All rights reserved.</li>
+            <div class="flex items-center gap-3 text-[12px] text-[#8b8f96]">
+               <i class="bi bi-credit-card-2-front-fill"></i>
+               <i class="bi bi-paypal"></i>
+               <i class="bi bi-apple"></i>
+               <i class="bi bi-google"></i>
+            </div>
+         </ul>
+      </div>
+   </section>
+   <!-- Footer Section End -->
+
+   <!-- Swiper JS cdn Link -->
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.cjs"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <!-- Swiper One Script -->
+
+   <script>
+      const cursor = document.querySelector('.customCursor');
+
+      // mouse position
+      let mouseX = 0;
+      let mouseY = 0;
+      // cursor position
+      let cursorX = 0;
+      let cursorY = 0;
+
+      // mouse moveing
+      document.addEventListener('mousemove', (e) => {
+         mouseX = e.clientX;
+         mouseY = e.clientY;
+      })
+
+      // Animate cursor
+      function animateCursor() {
+         cursorX += (mouseX - cursorX) * 0.15;
+         cursorY += (mouseY - cursorY) * 0.15;
+
+         cursor.style.left = cursorX + 'px';
+         cursor.style.top = cursorY + 'px';
+         requestAnimationFrame(animateCursor)
+      }
+      animateCursor()
+
+   </script>
+
+</body>
+
+</html>
