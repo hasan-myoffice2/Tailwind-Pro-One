@@ -13,10 +13,8 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-red-700: oklch(50.5% 0.213 27.518);
     --color-red-900: oklch(39.6% 0.141 25.723);
     --color-amber-200: oklch(92.4% 0.12 95.746);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-700: oklch(55.5% 0.163 48.998);
     --color-emerald-50: oklch(97.9% 0.021 166.113);
     --color-emerald-100: oklch(95% 0.052 163.051);
@@ -556,9 +554,6 @@
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
-  .h-1 {
-    height: var(--spacing);
-  }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
@@ -690,9 +685,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-2xl {
-    width: var(--container-2xl);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
@@ -885,9 +877,6 @@
   .scroll-mt-12 {
     scroll-margin-top: calc(var(--spacing) * 12);
   }
-  .list-none {
-    list-style-type: none;
-  }
   .appearance-none {
     appearance: none;
   }
@@ -962,6 +951,15 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
+  .gap-16 {
+    gap: calc(var(--spacing) * 16);
+  }
+  .gap-30 {
+    gap: calc(var(--spacing) * 30);
   }
   :where(.space-y-2 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
@@ -1344,9 +1342,6 @@
   .bg-amber-200 {
     background-color: var(--color-amber-200);
   }
-  .bg-amber-700 {
-    background-color: var(--color-amber-700);
-  }
   .bg-bgColorOne {
     background-color: var(--color-bgColorOne);
   }
@@ -1409,9 +1404,6 @@
   }
   .bg-navBgColor {
     background-color: var(--color-navBgColor);
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
   }
   .bg-red-900 {
     background-color: var(--color-red-900);
@@ -2138,9 +2130,6 @@
   .accent-\[\#1F624C\] {
     accent-color: #1F624C;
   }
-  .accent-\[\#1b4d3e\] {
-    accent-color: #1b4d3e;
-  }
   .accent-brandColor {
     accent-color: var(--color-brandColor);
   }
@@ -2475,9 +2464,6 @@
     }
     .hover\:bg-\[\#1f5c4d\]:hover {
       background-color: #1f5c4d;
-    }
-    .hover\:bg-\[\#153d31\]:hover {
-      background-color: #153d31;
     }
     .hover\:bg-\[\#1677ff\]:hover {
       background-color: #1677ff;
